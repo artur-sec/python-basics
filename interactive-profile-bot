@@ -1,0 +1,26 @@
+while True:
+    name = input("Enter your name: ")
+    choise = input(f"Is your name {name}, isn't it?: ")
+    if choise == "yes":
+        location = (input(f"{name}, where do you live? "))
+        print(f"Okay, I got it! You live in {location}.")
+    elif choise == "no":
+        print("Okay, let's try again.")
+        continue
+    else:
+        print("You've made a mistake, answer only yes or no.")
+        continue
+    print(f"{name}, how old are you? ")
+    print("1. <13")
+    print("2. <18")
+    print("3. >18")
+    age = int(input(f"{name}, choose the correct option: "))
+    if age == 1:
+        print("God bless you, child!")
+    elif age == 2:
+        print("Time to prepare for adulthood!")
+    elif age == 3:
+        print("Time to enjoy life!")
+    else:
+        print("Choose only 1, 2 or 3 next time.") 
+        break
