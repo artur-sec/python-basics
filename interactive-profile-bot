@@ -1,6 +1,6 @@
 while True:
     name = input("Enter your name: ")
-    choise = input(f"Is your name {name}, isn't it?: ")
+    choise = input(f"Is your name {name}?: ")
     if choise == "yes":
         location = (input(f"{name}, where do you live? "))
         print(f"Okay, I got it! You live in {location}.")
